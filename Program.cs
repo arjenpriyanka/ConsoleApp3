@@ -28,7 +28,7 @@ namespace ConsoleApp2
                 return ("is null or empty, please try again");
             else
             {
-                long[] list1 = input.Split(' ').Select(Int64.Parse).ToArray();
+                ulong[] list1 = input.Split(' ').Select(UInt64.Parse).ToArray();
 
                 double[] keys = new double[list1.Length];
 
@@ -50,7 +50,7 @@ namespace ConsoleApp2
             }
         }
 
-        static double FindSumm(long a)
+        static double FindSumm(ulong a)
         {
             string partic = Convert.ToString(a);
             char[] b = partic.ToArray();
